@@ -15,12 +15,20 @@ public class SecondActivity extends Activity {
     Button modify;
     Button markAsDone;
     static TextView seditTitle;
+    static TextView seditDescription;
+    static TextView seditPriority;
+    static TextView seditDate;
+    static TextView seditTime;
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         seditTitle = (TextView) findViewById(R.id.seditTitle);
+        seditDescription = (TextView) findViewById(R.id.seditDescription);
+        seditPriority = (TextView) findViewById(R.id.seditPriority);
+        seditDate = (TextView) findViewById(R.id.seditDate);
+        seditTime = (TextView) findViewById(R.id.seditTime);
         modify = (Button) findViewById(R.id.modify);
         modify.setOnClickListener(new View.OnClickListener() {
             @Override
