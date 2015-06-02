@@ -14,25 +14,26 @@ public class SecondActivity extends Activity {
 
     Button modify;
     Button markAsDone;
-    TextView seditTitle;
+    static TextView seditTitle;
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
+        seditTitle = (TextView) findViewById(R.id.seditTitle);
         modify = (Button) findViewById(R.id.modify);
         modify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                seditTitle = (TextView) findViewById(R.id.seditTitle);
-                //прави полето editable, чете новите стойности и ги записва в базата
+
+                //прави полетата editable, чете новите стойности и ги записва в базата
             }
         });
         markAsDone = (Button) findViewById(R.id.done);
         markAsDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //изтрива записът от таблицата
+                //изтрива записа от таблицата
             }
         });
     }

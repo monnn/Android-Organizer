@@ -15,7 +15,6 @@ public class MainActivity extends ActionBarActivity {
 
     Button addNew;
     TextView task;
-    TextView seditTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +55,8 @@ public class MainActivity extends ActionBarActivity {
         }
 
         void getTaskInfo(String title) {
-            seditTitle = (TextView) findViewById(R.id.seditTitle);
-            seditTitle.setText(title);
+            SecondActivity.seditTitle.setText(title);
+            // сет-ване и на другите полета в second activity според стойностите им в базата
             Intent intent2 = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent2);
         }
