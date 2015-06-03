@@ -1,4 +1,4 @@
-package com.moni.myapplication;
+package com.moni.myapplication.model;
 
 import java.sql.Time;
 import java.util.Date;

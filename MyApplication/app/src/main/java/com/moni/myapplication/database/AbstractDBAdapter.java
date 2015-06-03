@@ -1,4 +1,4 @@
-package com.moni.myapplication;
+package com.moni.myapplication.database;
 
 import android.content.Context;
 import android.content.res.AssetManager;

@@ -1,8 +1,10 @@
-package com.moni.myapplication;
+package com.moni.myapplication.database;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.moni.myapplication.model.Task;
 
 /**
  * Created by moni on 15-6-2.
